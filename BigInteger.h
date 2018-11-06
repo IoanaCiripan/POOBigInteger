@@ -3,10 +3,6 @@
 
 class BigInteger
 {
-	std::vector < unsigned char > digits;
-	int sign;
-	unsigned char base;
-
 public:
 
 	BigInteger();
@@ -76,12 +72,10 @@ public:
 	friend std::istream& operator>> (std::istream& is, BigInteger& bigInteger);
 
 
-
-
-
-
-
-
+private :
+	std::vector < unsigned char > digits;
+	int sign;
+	unsigned char base;
 
 
 };
