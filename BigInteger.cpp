@@ -4,7 +4,10 @@
 #include "sstream"
 
 
-//BigInteger :: BigInteger()
+BigInteger::BigInteger()
+{
+
+}
 
 BigInteger :: ~BigInteger()
 {
