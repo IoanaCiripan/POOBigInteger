@@ -5,10 +5,8 @@ class BigInteger
 {
 public:
 
-	BigInteger();
-	~BigInteger();
 
-	BigInteger(int number, unsigned char m_base);
+	BigInteger(int number=0, unsigned char m_base=10);
 	BigInteger(long long int, unsigned char);
 	BigInteger(const std::string &number, unsigned char);
 

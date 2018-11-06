@@ -4,16 +4,8 @@
 #include "sstream"
 
 
-BigInteger::BigInteger()
-{
-}
 
-BigInteger :: ~BigInteger()
-{
-}
-
-
-BigInteger :: BigInteger(int number = 0, unsigned char m_base = 10)
+BigInteger :: BigInteger(int number , unsigned char m_base )
 {
 	this->base = m_base;
 	if (number >= 0)
@@ -31,6 +23,10 @@ BigInteger :: BigInteger(int number = 0, unsigned char m_base = 10)
 	}
 	std::reverse(this->digits.begin(), this->digits.end());
 
+	this->digits.push_back('0');
+	 
+
+	
 }
 
 BigInteger :: BigInteger(long long int number, unsigned char m_base = 10)
