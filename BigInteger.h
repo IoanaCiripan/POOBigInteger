@@ -9,7 +9,7 @@ class BigInteger
 
 public:
 
-	//BigInteger();
+	BigInteger();
 	~BigInteger();
 
 	BigInteger(int number, unsigned char m_base);

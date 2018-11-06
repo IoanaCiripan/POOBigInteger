@@ -6,7 +6,6 @@
 
 BigInteger::BigInteger()
 {
-
 }
 
 BigInteger :: ~BigInteger()
@@ -364,7 +363,7 @@ BigInteger BigInteger :: operator-= (int substract)
 	return *this -= bigIntSubstract;
 }
 
-BigInteger BigInteger :: operator*=(BigInteger multiplier)
+BigInteger BigInteger :: operator*= (BigInteger multiplier)
 {
 	BigInteger rez = BigInteger("0", 10);
 	BigInteger thisCopy = BigInteger("0", 10);
@@ -392,7 +391,7 @@ BigInteger BigInteger :: operator*=(BigInteger multiplier)
 
 	return *this;
 }
-BigInteger BigInteger :: operator*=(int multiplierInt)
+BigInteger BigInteger :: operator*= (int multiplierInt)
 {
 	BigInteger multiplierBigInt = BigInteger(multiplierInt, 10);
 	return *this *= multiplierBigInt;
